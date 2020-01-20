@@ -87,18 +87,14 @@ addEventListeners();
 
 // checking bot
 function botCheck(src) {
-  if (src.length > 26) {
-    if (src.substring(22) == botDoor) {
-      foundBot = true;
-      //determineWinner();
-    }
-  } else if (src == botDoor) {
-    foundBot = true;
-    //determineWinner();
-  }
   // if (src.substring(22) == botDoor) {
-  // 	foundBot = true;
+  //   foundBot = true;
   // }
+
+  if (src.includes(botDoor)) {
+    foundBot = true;
+  }
+
   determineWinner();
 }
 
