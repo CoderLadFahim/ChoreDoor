@@ -10,7 +10,8 @@ body {
 	display: grid;
 	place-items: center;
 	text-align: center;
-	background-color: rgb(3, 32, 93);
+	/*background-color: rgb(3, 32, 93);*/
+	background-color: teal;
 	color: #fff;
 }
 
